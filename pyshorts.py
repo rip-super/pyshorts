@@ -12,8 +12,8 @@ date = datetime.today().strftime('%m-%d-%Y')
 def generate_facts(output_folder):
     # API URL and key for fetching random facts from api-ninjas
     api_url = "https://api.api-ninjas.com/v1/facts"
-    api_key = "XaidPjVX2dHMsxjdoIP+OA==nzrYb48p7XHCXirE"
-    all_facts = open(r"C:\Users\nmdas\OneDrive\Desktop\code\projects\pyshorts\assets\all_facts.txt", "r").read().split("\n")
+    api_key = "YOUR API KEY"
+    all_facts = open(r"assets\all_facts.txt", "r").read().split("\n")
     curr_facts = []
 
     def get_fact():
@@ -35,7 +35,7 @@ def generate_facts(output_folder):
                         f.write(fact + "\n")
                         curr_facts.append(str(fact))
                     # Also append the fact to the 'all_facts.txt' file
-                    with open(r"C:\Users\nmdas\OneDrive\Desktop\code\projects\pyshorts\assets\all_facts.txt", "a") as f:
+                    with open(r"assets\all_facts.txt", "a") as f:
                         f.write(fact + "\n")
                     break
             else:
@@ -81,7 +81,7 @@ def text_to_speech(filename, output_folder):
 
 def mp3_to_srt(mp3_file, srt_file):
     # API key and endpoints for AssemblyAI
-    API_KEY = '96c1731ab3fd45a98ffb36f92646a540'
+    API_KEY = 'YOUR API KEY'
     UPLOAD_URL = 'https://api.assemblyai.com/v2/upload'
     TRANSCRIBE_URL = 'https://api.assemblyai.com/v2/transcript'
     CHECK_STATUS_URL = 'https://api.assemblyai.com/v2/transcript/{}'
