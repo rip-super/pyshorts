@@ -1,0 +1,1 @@
+to use this file you need 2 api keys. 1 from fun facts api by api layer and the other from assembly ai voice to text. After that just make an assets folder and put your music and video in there and it should work.
